@@ -1,0 +1,13 @@
+.env
+.byebug_history
+spec/examples.txt
+
+/coverage/
+/vendor/bundle
+/.bundle
+/log
+/tmp
+/public/assets
+/node_modules/
+
+.DS_Store

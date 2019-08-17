@@ -1,0 +1,63 @@
+<% content_for :page_title do %>Support<% end %>
+
+<%= content_for :breadcrumb do %>
+  <%= render 'shared/breadcrumb' %>
+<% end%>
+
+<main role="main" id="content">
+
+  <div class="grid-row inner">
+    <div class="column-two-thirds">
+      <h1 class='heading-large'>Support</h1>
+
+      <p>
+        The Government Digital Service (GDS) maintains the service behind data.gov.uk and helps
+        publishers to manage and update their data. GDS provides operational support
+        from 9am to 5pm, Monday to Friday.
+      </p>
+
+      <p>
+        For questions about a dataset, you can contact the publisher directly if they’ve provided contact details on the
+        dataset page.
+      </p>
+
+      <p>
+        Please give us your feedback about the site using <%= link_to "our survey", "http://www.smartsurvey.co.uk/s/3SEXD/" %>.
+      </p>
+
+      <p>
+        To get answers about <%= link_to "GOV.UK", "https://www.gov.uk/" %> you can check the GOV.UK help pages
+        or <%= link_to "contact", "https://www.gov.uk/contact/govuk" %> the team.
+      </p>
+
+      <form action="tickets/new" method="get">
+        <div class="form-group">
+          <fieldset>
+
+            <legend>
+              <h1 class="heading-medium">How can we help you?</h1>
+            </legend>
+
+            <div class="multiple-choice">
+              <input id="support-1" type="radio" name="support" value="feedback">
+              <label for="support-1">I want to report a problem</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="support-2" type="radio" name="support" value="data">
+              <label for="support-2">I have a data request</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="support-3" type="radio" name="support" value="publish">
+              <label for="support-3">I want to publish for an organisation</label>
+            </div>
+
+          </fieldset>
+        </div>
+        <input class="button" type="submit" value="Continue">
+      </form>
+
+    </div>
+  </div>
+</main>

@@ -1,0 +1,36 @@
+{
+  "name": "find-data",
+  "scripts": {},
+  "env": {
+    "RAILS_ENV": {
+      "required": true
+    },
+    "RACK_ENV": {
+      "required": true
+    },
+    "ES_HOST": {
+      "required": true
+    },
+    "ZENDESK_API_KEY": {
+      "required": true
+    },
+    "ZENDESK_END_POINT": {
+      "required": true
+    },
+    "ZENDESK_PASSWORD": {
+      "required": true
+    },
+    "ZENDESK_USERNAME": {
+      "required": true
+    }
+  },
+  "formation": {},
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}

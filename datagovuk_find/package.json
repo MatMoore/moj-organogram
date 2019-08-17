@@ -1,0 +1,7 @@
+{
+  "name": "datagovuk_find",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "accessible-autocomplete": "^1.6.2"
+  }
+}
